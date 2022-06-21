@@ -1,4 +1,4 @@
-#Numerical Integration
+# Numerical Integration
 
 Performs numerical integration on x-y data. Uses __Simpson's Rule__ where applicable, and the __Trapezoidal Rule__ in all other cases. 
 
@@ -8,9 +8,9 @@ Returns the **result**, as well as a string indicating the **method** used.
     [method, result] = NumIntgrl(x, y);
 ```
 
-##Methods
+## Methods
 
-###Simpson's 1/3 Rule:
+### Simpson's 1/3 Rule:
 
 Approximates a function using __2nd order polynomials__.
 
@@ -25,7 +25,7 @@ Here ```(b-a)/n``` is the spacing between data points.
 <br>
 <br>
 
-###Simpson's 3/8 Rule:
+### Simpson's 3/8 Rule:
 
 Approximates a function using __3rd order polynomials__.
 
@@ -40,7 +40,7 @@ Here ```(b-a)/n``` is the spacing between data points.
 <br>
 <br>
 
-###Trapezoidal Rule:
+### Trapezoidal Rule:
 
 Approximates a function using __trapezoids__.
 
@@ -55,7 +55,7 @@ Here ```(b-a)/n``` is the spacing between data points.
 <br>
 <br>
 
-###Test code:
+### Test code:
 
 <img src = "./files for README/sine_integral.png" width = "200"/>
 
@@ -86,6 +86,6 @@ n = 999    	Trapz = 1.999998 	Simp 3/8 = 2.000000
 n = 9999   	Trapz = 2.000000 	Simp 3/8 = 2.000000
 ```
 
-###Resources:
+### Resources:
 
 https://web.engr.oregonstate.edu/~webbky/MAE4020_5020_files/Section%208%20Integration.pdf
