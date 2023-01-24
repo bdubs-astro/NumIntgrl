@@ -39,6 +39,12 @@ function [method, result] = NumIntgrl(x, y)
 
     else                        % default to trapezoidal rule
         method = 'Trap    ';
-        result = trapz(x, y);
+        sum = 0;     
+        for i=1:Nseg+1
+            sum = sum + y(i);
+        end
+        correction = ( y(1) + y(Nseg+1) )/2;
+        result = dx*(sum - correction);
+%         result = trapz(x, y);
     end
 end
