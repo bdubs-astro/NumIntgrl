@@ -52,7 +52,7 @@ Approximates a function using __trapezoids__.
 
 For ___n___ equal segments (_i.e._, ___n+1___ evenly spaced data points), the definite integral can be approximated as follows. 
 
-<img src = "./files for README/trapezoid rule equation v2.png" width = "400"/>
+<img src = "./files for README/trapezoid rule equation v3.png" width = "400"/>
 
 Here ```(b-a)/n``` is the spacing between data points.
 
