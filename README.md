@@ -25,6 +25,9 @@ Here ```(b-a)/n``` is the spacing between data points.
 <br>
 <br>
 
+<!-- insert page break -->
+<div style="page-break-after: always;"></div>
+
 ### Simpson's 3/8 Rule:
 
 Approximates a function using __3rd order polynomials__.
@@ -40,6 +43,9 @@ Here ```(b-a)/n``` is the spacing between data points.
 <br>
 <br>
 
+<!-- insert page break -->
+<div style="page-break-after: always;"></div>
+
 ### Trapezoidal Rule:
 
 Approximates a function using __trapezoids__.
@@ -54,6 +60,9 @@ Here ```(b-a)/n``` is the spacing between data points.
 
 <br>
 <br>
+
+<!-- insert page break -->
+<div style="page-break-after: always;"></div>
 
 ### Test code:
 
