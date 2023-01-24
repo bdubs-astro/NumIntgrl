@@ -94,6 +94,19 @@ n = 99     	Trapz = 1.999832 	Simp 3/8 = 2.000000
 n = 999    	Trapz = 1.999998 	Simp 3/8 = 2.000000
 n = 9999   	Trapz = 2.000000 	Simp 3/8 = 2.000000
 ```
+```
+for Npts = logspace(1, 4, 4) + 2
+    x = pi*linspace(0, 1, Npts);
+    y = sin(x);
+    [method, result] = NumIntgrl(x, y);
+    fprintf('n = %-6d \tTrapz = %.6f \t%s = %.6f\n', Npts-1, trapz(x, y), method, result)
+end
+
+n = 11     	Trapz = 1.986387 	Trap     = 1.986387
+n = 101    	Trapz = 1.999839 	Trap     = 1.999839
+n = 1001   	Trapz = 1.999998 	Trap     = 1.999998
+n = 10001  	Trapz = 2.000000 	Trap     = 2.000000
+```
 
 ### Resources:
 
