@@ -38,13 +38,13 @@ function [method, result] = NumIntgrl(x, y)
         result = 3/8*dx*(y(1) + 3*sum1 + 3*sum2 + 2*sum3 + y(Nseg+1));
 
     else                        % default to trapezoidal rule
-        method = 'Trap    ';
+        method = 'Trap';
         sum = 0;     
         for i=1:Nseg+1
             sum = sum + y(i);
         end
         correction = ( y(1) + y(Nseg+1) )/2;
         result = dx*(sum - correction);
-%         result = trapz(x, y);
+%         result = trapz(x, y);     % compare against built-in MATLAB function
     end
 end
